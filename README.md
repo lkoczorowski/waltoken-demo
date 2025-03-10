@@ -333,7 +333,8 @@ There are a few different things you can do from here
 
 1. Deploy your coin to the Ethereum or Moonbeam network by adding these networks to your `hardhat.config.js` file.
 2. Add more complexity to your coin
-3. Explore other possibilities
+3. Create a dApp that interfacts with your coin or another contract
+4. Explore other possibilities
 
 My recommendation is to check our Moonbeam, it has much lower gas fees, access to other chains within the Polkadot network, and full support for the Ethereum tool chain -- like this example demonstrtes. 
 
