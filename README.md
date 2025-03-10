@@ -12,18 +12,19 @@ By the end of this tutorial, you will have:
 > Note: Deploying on Ethereum requires ETH, and Moonbeam requires GLMR
 
 ## Speed Run
-> docker run -it -p 8545:8545 lkoczorowski/hardhat-node
+If you just wanna see it work quickly, do the following:
+> git clone https://github.com/lkoczorowski/waltoken-demo.git
 
-> git pull https://github.com/lkoczorowski/waltoken-demo.git
+> cd waltoken-demo
 
 > npm install
 
 > npx hardhat compile
 
-> npx hardhat ignition deploy ./ignition/modules/Waltoken.js --network docker
+> npx hardhat ignition deploy ./ignition/modules/Waltoken.js
 
 ## Dependencies to Download
-1. [Node](https://nodejs.org/en/download)
+1. [NodeJS](https://nodejs.org/en/download)
     - JavaScript engine that will run the code necessary to issue your token
 2. [Docker](https://www.docker.com/products/docker-desktop/) 
     - Manager containers on your computer. Containers are purpose build virtual computers
@@ -62,7 +63,7 @@ WARNING: These accounts, and their private keys, are publicly known.
 Any funds sent to them on Mainnet or any other live network WILL BE LOST.
 ```
 
-## Setup Node Project
+## Setup NodeJS Project
 Open Visual Studio and open a workspace/folder where you want to keep this project. Once open, click View -> Open Terminal and to initialize your project execute:
 > npm init -y
  
@@ -297,7 +298,7 @@ We'll go through connecting to a Rabby wallet. If you're using MetaMask the step
 6. Private Key: `0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
 > Note: This key is *NOT* private! Do not put any real tokens or money in this account, it will get drained!
 
-This private key is from the first account that hardhat node produces.
+This private key is from the first account that hardhat node produces. Everyone that uses hardhat has this private key, so it's not really private. 
 
 Let's first connect your wallet to this test account. After install the Rabby browser extension, you'll get the option to create a new address or connect to an existing one:
 1. Click "I already have an address"
