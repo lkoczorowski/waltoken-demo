@@ -36,9 +36,9 @@ If you just wanna see it work quickly, do the following:
     - Ethereum Compatible Crypto Wallet
 > Note: Some sign-ups are required but the downloads are free
 
-## Setup Your Environment
+# Setup Your Environment
 
-# testnet and Docker
+## testnet and Docker
 In a terminal (CMD or PowerShell for windows, bash/sh for Mac/Linux)  execute:
 > docker run -it -p 8545:8545 lkoczorowski/hardhat-node
 if successful, you will see something like:
